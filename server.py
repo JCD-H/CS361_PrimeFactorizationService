@@ -3,10 +3,8 @@ from prime_factors import find_prime_factors
 
 app = Flask(__name__)
 
-#going to use post since we are sending a
 @app.route('/receive_message', methods=['POST'])
 def receive_message():
-    # Extract message from the JSON payload of the request - shoule wrap thi s in try 
     data = request.get_json()
     print(f"data recieved {data}")
 

@@ -20,5 +20,4 @@ def find_prime_factors(n):
     return factors
 
 if __name__ == '__main__':
-    # Run the server on localhost:50000
-    print(prime_factors(26)) # a test
+    print(find_prime_factors(26)) # a test
